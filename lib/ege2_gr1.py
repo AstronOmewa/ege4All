@@ -1,11 +1,8 @@
 from itertools import *
 
-def task2(table = '''''', results = [0,0,0], vars = 'xyz', F = lambda x,y,z: x==y==z, unique = True):
+def task2(table = '''''', results = [], vars = 'xyz', F = lambda x,y,z: x==y==z, unique = True):
     t = table.split(' ')
-    spaces = 0
-    for x in range(len(t)):
-        if t[x] == '_':
-            spaces+=1
+    spaces = len(t) - (t.count('1') + t.count('0'))
     
     for p in product([0,1],repeat=spaces):
         tx = []
@@ -30,4 +27,4 @@ def task2(table = '''''', results = [0,0,0], vars = 'xyz', F = lambda x,y,z: x==
                 print(''.join(perm))    
         
         
-print(task2("_ 0 0 _ 0 _",[0,0],vars='xyz',F = lambda x,y,z: (x or y) <= ( z == x ) ))
+# print(task2("_ 0 0 _ 0 _",[0,0],vars='xyz',F = lambda x,y,z: (x or y) <= ( z == x ) ))
