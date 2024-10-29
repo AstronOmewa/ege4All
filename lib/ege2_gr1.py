@@ -1,5 +1,7 @@
 from itertools import *
 
+
+
 def task2(table = '''''', results = [], vars = 'xyz', F = lambda x,y,z: x==y==z, unique = True):
     t = table.split(' ')
     spaces = len(t) - (t.count('1') + t.count('0'))
@@ -26,5 +28,3 @@ def task2(table = '''''', results = [], vars = 'xyz', F = lambda x,y,z: x==y==z,
             if [F(**dict(zip(perm,r))) for r in tx] == results:
                 print(''.join(perm))    
         
-        
-# print(task2("_ 0 0 _ 0 _",[0,0],vars='xyz',F = lambda x,y,z: (x or y) <= ( z == x ) ))
