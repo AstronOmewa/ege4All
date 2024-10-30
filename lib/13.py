@@ -2,7 +2,6 @@ from ipaddress import *
 
 # ip = '192.168.104.109'
 # mask  = '255.255.255.252'
-
 # net = [f'{x:b}' for x in ip_network(f'{ip}/{mask}', 0)]
 # print(net, sep = '\n')
 """
