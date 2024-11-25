@@ -25,11 +25,11 @@ with open('progress_check\\25-11-24\\17_1.txt') as f:
     for i in range(len(a)-1):
         x, y = a[i], a[i+1]
 
-        if ((len(str(x))==3) + (len(str(y))==3)) == 1 and abs(x-y)%mint11==0:
+        if ((len(str(x))!=3) + (len(str(y))!=3)) == 1 and abs(x-y)%mint11==0:
             cnt+=1
             maxS=max(maxS, x+y)
 
     print(cnt, maxS)
 
 with open('progress_check\\25-11-24\\answers\\17_1A.txt','w') as f:
-    f.write('ans:{} {}'.format(cnt,maxS))
+    f.write('ans: {} {}'.format(cnt,maxS))

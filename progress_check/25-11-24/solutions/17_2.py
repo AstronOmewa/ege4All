@@ -25,7 +25,7 @@ with open('progress_check\\25-11-24\\17_2.txt') as f:
             if ((x>ma)+(y>ma))>0:
                 cnt+=1
 
-print(cnt, maxS)
+print(maxS, cnt)
 
 with open('progress_check\\25-11-24\\answers\\17_2A.txt','w') as f:
-    f.write('ans:{} {}'.format(cnt,maxS))
+    f.write('ans: {} {}'.format(maxS, cnt))
