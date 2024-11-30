@@ -1,4 +1,4 @@
-from lib.ege2 import task2
+from ...lib.exec import task2
 
 print(task2(
     '''

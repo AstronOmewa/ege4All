@@ -1,7 +1,5 @@
 from itertools import *
 
-
-
 def task2(table = '''''', results = [], vars = 'xyz', F = lambda x,y,z: x==y==z, unique = True):
     t = table.split(' ')
     spaces = len(t) - (t.count('1') + t.count('0'))
