@@ -1,17 +1,12 @@
-ans = [0]
+ans = []
 
 def trian(a, b, c):
-    if (a+b > c) and (a+c > b) and (b+c > a):
+    if ((a+b) > c) and ((a+c) > b) and ((b+c) > a):
         return True
     return False
 
 for a in range(150):
-    for x in range(1000):
-        if (trian(x,10,20)) <= (not (max(x, 8) > 24)) == (not trian(3, a, x)):
-            pass
-        else:
-            break
-    else:
+    if all ((trian(x,10,20) <= (not (max(x, 8) > 24))) == (not (trian(3, a, x))) for x in range(1000)):
         ans.append(a)
 
 number = '9'
