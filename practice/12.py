@@ -99,18 +99,18 @@
 На вход программе поступает строка длиной не менее 60 символов, первый из которых - цифра 0, а остальные – цифры 1 и 2. 
 После выполнения программы получилась строка, сумма цифр которой – квадрат натурального числа. Чему равна наименьшая возможная сумма цифр в исходной строке?
 '''
-# ans = [100]
-# for i in range(1,400):
-#     for j in range(1,400):
-#         if i+j+1>min(ans): continue
-#         s = '0' + '1'*i + '2'*j
+ans = [100]
+for i in range(1,400):
+    for j in range(1,400):
+        if i+j+1>min(ans): continue
+        s = '0' + '1'*i + '2'*j
 
-#         while '01' in s or '02' in s:
-#             s = s.replace('02','1110')
-#             s = s.replace('01','220')
+        while '01' in s or '02' in s:
+            s = s.replace('02','1110',1)
+            s = s.replace('01','220',1)
         
-#         sum_ = sum(int(x) for x in s)
-#         if sum_**0.5 == int(sum_**0.5):
-#             ans.append(sum_)
+        sum_ = sum(int(x) for x in s)
+        if sum_**0.5 == int(sum_**0.5):
+            ans.append(sum_)
 
-# print(min(ans))
+print(min(ans))
