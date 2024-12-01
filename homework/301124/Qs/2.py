@@ -42,5 +42,3 @@ def game(s1, s2, m):
         return all(h)
     
 print('20: ', *[s for s in range(1,52) if not game(10, s, 1) and game(10, s, 3)], sep='')
-f = open('homework/301124/ans/2A.txt','w')
-f.write('Answer: {}'.format(''.join([str(s) for s in range(1,52) if not game(10, s, 1) and game(10, s, 3)])))

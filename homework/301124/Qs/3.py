@@ -17,5 +17,3 @@ def game(s1, s2, m):
 ans = str(min([s for s in range(1,51) if game(10, s, 3) and not game(10, s, 1)]))
 
 print("#21: {}".format(ans))
-f = open('homework/301124/ans/3A.txt','w')
-f.write('Answer: {}'.format(ans))

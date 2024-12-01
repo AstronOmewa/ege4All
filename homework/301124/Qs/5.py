@@ -22,9 +22,5 @@ for i in range(0,150):
             ans.append(ls)
             
 ans = min(ans)
-number = '5'
 
-ans = str(ans)
 print('Answer: {}'.format(ans))
-f = open('homework/301124/ans/'+number+'A.txt','w')
-f.write("Answer: "+ans)

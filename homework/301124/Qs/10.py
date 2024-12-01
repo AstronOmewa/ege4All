@@ -12,9 +12,4 @@ with open('homework/301124/Qs/17_data/17 (1).txt') as f:
                 cnt += 1
                 maxsum = max(maxsum, sum(a[i+k] for k in range(4)))
 
-number = '10'
-ans = str(cnt)+' '+str(maxsum)
-ans = str(ans)
 print('Answer: {}'.format(ans))
-f = open('homework/301124/ans/'+number+'A.txt','w')
-f.write("Answer: "+ans)

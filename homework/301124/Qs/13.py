@@ -33,9 +33,4 @@ for _ in range(35_000_000,40_000_000):
     if (p == int(p)) and isprime(p):
         ans += f'{_}\n'
 
-number = '13'
-
-ans = str(ans)
 print('Answer: {}'.format(ans))
-f = open('homework/301124/ans/'+number+'A.txt','w')
-f.write("Answer: "+ans)
