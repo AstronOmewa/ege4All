@@ -31,7 +31,7 @@
 """
 
 def game(s1, s2, m):
-    if s1+s2 >= 52: return m%2==0
+    if s1+s2 >= 62: return m%2==0
     if m==0: return 0
 
     h = [game(*move,m-1) for move in [(s1+1,s2), (s1*2, s2), (s1,s2+1), (s1,2*s2)]]
